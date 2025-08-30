@@ -1,11 +1,31 @@
+
+.epunda-slab-<uniquifier> {
+  font-family: "Epunda Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
 }
 
+.logo a, .menu {
+    display: flex;
+    gap: 10px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: salmon;
     padding: 20px 50px;
+    border-radius: 20px 10px / 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+
 }
