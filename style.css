@@ -1,16 +1,20 @@
-
-.epunda-slab-<uniquifier> {
+.epunda-slab {
   font-family: "Epunda Slab", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-image: url(https://wallpapercave.com/wp/wp4800183.jpg);
+}
 .logo a, .menu {
+    
     display: flex;
     gap: 10px;
 }
@@ -19,13 +23,74 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: salmon;
-    padding: 20px 50px;
-    border-radius: 20px 10px / 10px 20px;
+    padding: 15px 40px;
+    border-radius: 0 0 10px 10px;
 }
 
 nav a {
+    
     color: white;
     text-decoration: none;
+}
 
 
+.container {
+   display: flexbox; 
+   margin-left: 30%;             
+  justify-content: center;     
+  align-items: center; 
+  background: rgba(0,0,0,0.8);  /* fundal semi-transparent */
+  color: white;                 
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px; 
+  margin-top: 5%;
+}
+
+.container h1 {
+    text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.formular {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* două coloane egale */
+  gap: 20px;                       /* spațiu între coloane */
+  align-items: center;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  background: transparent;         /* fundal transparent */
+  border: none;                    /* fără border clasic */
+  border-bottom: 1px solid white;  /* doar o linie jos */
+  color: white;
+  padding: 5px;
+}
+
+.mesaj {
+    display: flexbox;
+
+    grid-row: 1 / span 4; 
+}
+
+button {
+    grid-column: 2;         /* butonul e pe coloana a doua */
+  text-align: right;
+  background: salmon;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
 }
